@@ -1,4 +1,4 @@
- /*       ---------BRUTE FORCE---------   T=O(n3), S=O(1)
+   /*       ---------BRUTE FORCE---------   T=O(n3), S=O(1)
 
  public class MaxMinSubarray {
     public static void maxMinSubarray(int arr[]) {
@@ -93,27 +93,4 @@ public class MaxMinSubarray {
     }
 }
 
-*/
-
-
-//   ----------KADANE'S ALGORITHM------------
-
-public class MaxMinSubarray {
-    public static void maxSubarray(int arr[]) {
-        int len=arr.length;
-        int maxSum=arr[0];
-        int sum=0;
-        for(int i=0;i<len;i++) {
-            sum+=arr[i];
-            maxSum=(int)Math.max(sum,maxSum);
-            sum=sum<0?0:sum;
-        }
-        System.out.println("Maximum Sum:"+maxSum);
-    }
-    public static void main(String[] args) {
-        int number[]={-2,-3,4,-1,-2,1,5,-3};
-        maxSubarray(number);
-    }
-}
-
- 
+*/                                                       
