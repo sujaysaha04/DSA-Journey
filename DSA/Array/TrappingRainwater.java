@@ -22,7 +22,8 @@ public class TrappingRainwater {
         return trappedWater;
     }
     public static void main(String[] args) {
-        int height[]={4,2,0,6,3,2,5};
+        //int height[]={4,2,0,6,3,2,5};
+        int height[]={3,0,1,0,4,0,2};
         System.out.println(trappedWater(height));
     }
 }
